@@ -4,16 +4,34 @@ import { ReactNode } from "react";
 interface Props {
     children: ReactNode,
     addClassName?: string,
-    image?: string
+    image?: string,
+    buttonType?: ButtonType,
 }
 
-const Button = ({ children, addClassName, image }: Props) => {
-    return (
-        <button className={`btn select-none bg-purple text-darkBlue py-[10px] px-[20px] text-[14px] font-medium rounded-[5px] ${addClassName}`}>
-            {children}
-            {image ? <Image src={image} alt="Icon" /> : ""}
-        </button>
-    )
+export enum ButtonType {
+    Primary = "title",
+    Secondary = "secondary",
+}
+
+
+const Button = ({ children, addClassName, image, buttonType = ButtonType.Primary }: Props) => {
+    switch (buttonType) {
+        case ButtonType.Primary:
+            return (
+                <button className={`btn select-none bg-blue text-white py-[10px] px-[20px] text-[14px] font-medium rounded-[5px] ${addClassName}`}>
+                    {children}
+                    {image ? <Image src={image} alt="Icon" /> : ""}
+                </button>
+            )
+        case ButtonType.Secondary:
+            return (
+                <button className={`btn select-none bg-blue text-white py-[10px] px-[20px] text-[14px] font-medium rounded-[5px] ${addClassName}`}>
+                    {children}
+                    {image ? <Image src={image} alt="Icon" /> : ""}
+                </button>
+            )
+
+    }
 }
 
 export default Button;
