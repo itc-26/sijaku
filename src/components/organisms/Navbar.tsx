@@ -65,7 +65,7 @@ const Navbar = () => {
             <nav className="flex fixed mt-0 h-[70px] shadow-md transition duration-300 ease-in-out">
                 <GlobalContainer addClassName="flex justify-between items-center">
                     <div className="flex items-center gap-[70px]">
-                        <div className="flex gap-[15px] select-none">
+                        <div className="flex gap-[15px] items-center select-none">
                             <Image src={sijakuLogo} alt="SIJA.KU Logo" />
                             <Text textType={TextType.Regular} addClassName="text-darkBlue font-extrabold">SIJA.KU</Text>
                         </div>
