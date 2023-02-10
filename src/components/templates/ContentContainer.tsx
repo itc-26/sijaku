@@ -11,7 +11,7 @@ interface Props {
 const ContentContainer = ({ title, children, addClassName }: Props) => {
     return (
         <section>
-            <Text textType={TextType.Title} addClassName={`font-extrabold text-center mt-[120px] mb-[70px] ${addClassName}`}>{`${title} LABRA `}<span className="purple">V.22</span></Text>
+            <Text textType={TextType.SubTitle} addClassName={`font-extrabold text-darkBlue underline decoration-orange underline-offset-8 text-center mt-[120px] mb-[70px] ${addClassName}`}>{title}</Text>
             <div className="flex items-center text-center">
                 {children}
             </div>

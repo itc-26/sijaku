@@ -62,7 +62,7 @@ const Navbar = () => {
     return (
         <>
             {/* <MobileNavbar setIsShowNav={setIsShowNav} isShowNav={isShowNav} /> */}
-            <nav className="flex fixed mt-0 h-[70px] shadow-md transition duration-300 ease-in-out">
+            <nav className="bg-white flex fixed mt-0 h-[70px] shadow-md transition duration-300 ease-in-out">
                 <GlobalContainer addClassName="flex justify-between items-center">
                     <div className="flex items-center gap-[70px]">
                         <div className="flex gap-[15px] items-center select-none">
