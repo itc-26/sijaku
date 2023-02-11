@@ -2,9 +2,11 @@ import Image from "next/image"
 
 import Text, { TextType } from "@/components/atoms/Text"
 
-import Card from "@/components/organisms/Card"
 import Button, { ButtonType } from "@/components/molecules/Button"
 
+import Quote from "@/components/molecules/Quote"
+
+import Card from "@/components/organisms/Card"
 import Navbar from "@/components/organisms/Navbar"
 
 import ContentContainer from "@/components/templates/ContentContainer"
@@ -82,6 +84,11 @@ export default function Home() {
             </div>
           </GlobalContainer>
         </ContentContainer>
+      </div>
+      <div className="py-[80px]">
+        <GlobalContainer>
+          <Quote quote="“Education is not to be viewed as something like filling a vessel with water but, rather, assisting a flower to grow in its own way”" quoting="Bertrand Russell" />
+        </GlobalContainer>
       </div>
     </>
   )
