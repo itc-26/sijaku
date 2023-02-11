@@ -7,10 +7,10 @@ interface Props {
 }
 
 export enum TextType {
-    Title = "title",
-    SubTitle = "subTitle",
-    Regular = "regular",
-    Small = "small"
+    Title,
+    SubTitle,
+    Regular,
+    Small
 }
 
 const Text = ({ textType, children, addClassName }: Props) => {

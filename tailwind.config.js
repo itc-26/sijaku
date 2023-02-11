@@ -15,11 +15,12 @@ module.exports = {
     colors: {
       'white': '#FFFFFF',
       'black': '#000000',
-      'blue': '#312E81',
       'darkBlue': '#1D1C4D',
+      'blue': '#312E81',
+      'lightBlue': '#EEF2FF',
       'orange': '#F97316',
       'grey': '#768293',
-      'lightGrey': '#F9FAFB'
+      'lightGrey': '#F9FAFB',
     },
     extend: {},
     screens: {
