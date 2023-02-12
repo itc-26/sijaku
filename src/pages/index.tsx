@@ -78,8 +78,8 @@ export default function Home() {
           <GlobalContainer>
             <div className="flex flex-wrap justify-center gap-[40px]">
               {
-                subjects.map((subject) => (
-                  <Card img={subject.img} name={subject.name} description={subject.description} />
+                subjects.map((subject, i) => (
+                  <Card key={i} img={subject.img} name={subject.name} description={subject.description} />
                 ))
               }
             </div>
