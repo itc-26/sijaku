@@ -69,7 +69,7 @@ const Navbar = () => {
                             <Image src={sijakuLogo} alt="SIJA.KU Logo" />
                             <Text textType={TextType.Regular} addClassName="text-darkBlue font-extrabold">SIJA.KU</Text>
                         </div>
-                        <div className="flex gap-[25px]">
+                        <div className="flex gap-[25px] lg:hidden">
                             <LinkComponent>Home</LinkComponent>
                             <LinkComponent href="">About</LinkComponent>
                             <LinkComponent href="">People</LinkComponent>

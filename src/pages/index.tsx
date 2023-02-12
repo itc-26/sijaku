@@ -26,19 +26,19 @@ export default function Home() {
     <>
       <Navbar />
       <div className="font-bold top bg-lightGrey">
-        <GlobalContainer addClassName="flex justify-between items-center py-[85px]">
+        <GlobalContainer addClassName="flex justify-between items-center lg:flex-col-reverse lg:gap-[50px] py-[85px]">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col justify-around">
-              <Text textType={TextType.Title} addClassName="text-blue font-overpass">WELCOME TO</Text>
-              <Text textType={TextType.Title} addClassName="text-orange font-overpass">SIJA.KU</Text>
+              <Text textType={TextType.Title} addClassName="text-blue font-overpass lg:text-center">WELCOME TO</Text>
+              <Text textType={TextType.Title} addClassName="text-orange font-overpass lg:text-center">SIJA.KU</Text>
             </div>
-            <Text textType={TextType.Small} addClassName="text-grey max-w-[670px] font-medium"> <span className="font-bold italic">Belajar, Bekerja, Membangun</span> dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keikhlasan agar bisa mencapai kej ayaan di masa depan</Text>
-            <div className="flex gap-[30px]">
+            <Text textType={TextType.Small} addClassName="text-grey max-w-[670px] font-medium lg:text-center"> <span className="font-bold italic">Belajar, Bekerja, Membangun</span> dengan semangat yang penuh dan tidak lupa disertai dengan doa dan keikhlasan agar bisa mencapai kej ayaan di masa depan</Text>
+            <div className="flex gap-[30px] lg:justify-center">
               <Button addClassName="flex items-center gap-[20px] px-[24px] py-[12px] text-[21px]">Lebih Lanjut <Image src={nextIcon} alt="Next Icon" /></Button>
               <Button buttonType={ButtonType.Secondary} addClassName="text-[21px] ">Tentang Team</Button>
             </div>
           </div>
-          <Image src={sijaImg} alt="SIJA SMKN 26 Jakarta img" />
+          <Image src={sijaImg} alt="SIJA SMKN 26 Jakarta img" className="w-[40vw] h-[40vw] max-w-[530px] max-h-[530px] lg:h-[300px] lg:w-[300px]" />
         </GlobalContainer>
       </div>
       <div className="py-[100px]">
@@ -47,24 +47,24 @@ export default function Home() {
             <Text textType={TextType.Regular} addClassName="text-darkBlue max-w-[860px] text-center font-medium">
             Jurusan Sistem Informatika Jaringan dan Aplikasi dengan program studi empat tahun yang memiliki perangkat penunjang memadai untuk program belajar dan mengajar
             </Text>
-            <div className="flex gap-[64px]">
-              <div>
-                <Image src={teacherIcon} alt="Siapa SMKN 26 jakarta" />
-                <div className="bg-white shadow-xl h-[120px] w-[250px] flex flex-col justify-center items-center rounded-[24px]">
+            <div className="flex gap-[64px] lg:gap-[30px]">
+              <div className="flex flex-col gap-[15px] items-center">
+                <Image src={teacherIcon} alt="Siapa SMKN 26 jakarta" className="h-[15vw] w-[15vw] max-w-[150px] max-h-[150px]" />
+                <div className="bg-white shadow-xl max-h-[120px] max-w-[250px] h-[10vw] w-[20vw] lg:shadow-none flex flex-col justify-center items-center rounded-[24px]">
                   <Text textType={TextType.SubTitle} addClassName="text-orange font-bold">5</Text>
                   <Text textType={TextType.Regular} addClassName="text-blue font-bold">Pengajar</Text>
                 </div>
               </div>
-              <div>
-                <Image src={studentIcon} alt="Siapa SMKN 26 jakarta" />
-                <div className="bg-white shadow-xl h-[120px] w-[250px] flex flex-col justify-center items-center rounded-[24px]">
+              <div className="flex flex-col gap-[15px] items-center">
+                <Image src={studentIcon} alt="Siapa SMKN 26 jakarta" className="h-[15vw] w-[15vw] max-w-[150px] max-h-[150px]" />
+                <div className="bg-white shadow-xl max-h-[120px] max-w-[250px] h-[10vw] w-[20vw] lg:shadow-none flex flex-col justify-center items-center rounded-[24px]">
                   <Text textType={TextType.SubTitle} addClassName="text-orange font-bold">206</Text>
                   <Text textType={TextType.Regular} addClassName="text-blue font-bold">Peserta Didik</Text>
                 </div>
               </div>
-              <div>
-                <Image src={bookIcon} alt="Siapa SMKN 26 jakarta" />
-                <div className="bg-white shadow-xl h-[120px] w-[250px] flex flex-col justify-center items-center rounded-[24px]">
+              <div className="flex flex-col gap-[15px] items-center">
+                <Image src={bookIcon} alt="Siapa SMKN 26 jakarta" className="h-[15vw] w-[15vw] max-w-[150px] max-h-[150px]" />
+                <div className="bg-white shadow-xl max-h-[120px] max-w-[250px] h-[10vw] w-[20vw] lg:shadow-none flex flex-col justify-center items-center rounded-[24px]">
                   <Text textType={TextType.SubTitle} addClassName="text-orange font-bold">9</Text>
                   <Text textType={TextType.Regular} addClassName="text-blue font-bold">Mata Pelajaran</Text>
                 </div>

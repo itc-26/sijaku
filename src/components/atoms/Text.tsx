@@ -17,7 +17,7 @@ const Text = ({ textType, children, addClassName }: Props) => {
     switch(textType) {
         case TextType.Title:
             return (
-                <h1 className={`text-[5.25rem] ${addClassName} sm:text-[2rem]`}>{children}</h1>
+                <h1 className={`text-[5.25rem] ${addClassName} sm:text-[3rem]`}>{children}</h1>
             )
         case TextType.SubTitle:
             return (

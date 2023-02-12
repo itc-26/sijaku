@@ -25,6 +25,7 @@ module.exports = {
     extend: {},
     screens: {
       'sm': { 'max': '768px' },
+      'lg': { 'max': '992px'},
       'xl': { 'max': '1280px' },
     },
   },
