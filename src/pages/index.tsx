@@ -8,6 +8,7 @@ import Quote from "@/components/molecules/Quote"
 
 import Card from "@/components/organisms/Card"
 import Navbar from "@/components/organisms/Navbar"
+import Footer from "@/components/organisms/Footer"
 
 import ContentContainer from "@/components/templates/ContentContainer"
 import GlobalContainer from "@/components/templates/GlobalContainer"
@@ -85,11 +86,8 @@ export default function Home() {
           </GlobalContainer>
         </ContentContainer>
       </div>
-      <div className="py-[80px]">
-        <GlobalContainer>
-          <Quote quote="“Education is not to be viewed as something like filling a vessel with water but, rather, assisting a flower to grow in its own way”" quoting="Bertrand Russell" />
-        </GlobalContainer>
-      </div>
+      <Quote quote="“Education is not to be viewed as something like filling a vessel with water but, rather, assisting a flower to grow in its own way”" quoting="Bertrand Russell" />
+      <Footer />
     </>
   )
 }

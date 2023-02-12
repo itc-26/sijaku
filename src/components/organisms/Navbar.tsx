@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import GlobalContainer from "@/components/templates/GlobalContainer";
 import Text, { TextType } from "@/components/atoms/Text";
-import LinkComponent from "@/components/molecules/Link";
+import LinkComponent from "@/components/atoms/Link";
 import Button from "@/components/molecules/Button";
 
 // import CloseIcon from "@/assets/icon/close-icon.svg"
