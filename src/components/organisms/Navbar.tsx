@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import GlobalContainer from "@/components/templates/GlobalContainer";
 import Text, { TextType } from "@/components/atoms/Text";
-import LinkComponent from "@/components/molecules/Link";
+import LinkComponent from "@/components/atoms/Link";
 import Button from "@/components/molecules/Button";
 
 // import CloseIcon from "@/assets/icon/close-icon.svg"
@@ -69,7 +69,7 @@ const Navbar = () => {
                             <Image src={sijakuLogo} alt="SIJA.KU Logo" />
                             <Text textType={TextType.Regular} addClassName="text-darkBlue font-extrabold">SIJA.KU</Text>
                         </div>
-                        <div className="flex gap-[25px]">
+                        <div className="flex gap-[25px] lg:hidden">
                             <LinkComponent>Home</LinkComponent>
                             <LinkComponent href="">About</LinkComponent>
                             <LinkComponent href="">People</LinkComponent>
